@@ -18,20 +18,23 @@ rect (mouseX,550, 40,50);
     height=height+3;
     
  if (height==600){
+   checkCatch(randomNumber);
    height=0;
    newNumber();
  }
  
- if (height<50 && mouseX<randomNumber+30 && mouseX>randomNumber-30){
+
  
- }
+ fill(0, 0, 0);
+    textSize(16);
+    text("Score: " + score, 20, 20);
 
 
 }
- 
  void newNumber(){
    randomNumber=(int) random(width);
  }
+ 
    void checkCatch(int x){
          if (x > mouseX && x < mouseX+100)
             score++;
