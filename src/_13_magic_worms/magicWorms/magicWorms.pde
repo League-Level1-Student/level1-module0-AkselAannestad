@@ -7,19 +7,20 @@ void setup(){
 
 }
 void draw(){
+  makeMagical();
    for(int i =0; i<300; i++){
-  fill(255,0,0);
-    ellipse(x,y,5,5);
+  fill(frameCount,i,0);
+    ellipse(getWormX(i),getWormY(i),5,5);
     if(i==300){ran=true;}
     x=x+2;
     y=y+2;
     if(ran=true){
-    getWormX(i);
-    getWormY(i);}
+    
+    
   }
 
   
-}
+}}
  float frequency = .001;
     float noiseInterval = PI;
 
